@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <script src="data.js"></script>
+  <title>JS Bin</title>
+</head>
+<body>
+  <div>
+    <div>
+      <p id="errorMessage"></p>
+    </div>
+    <div id="newDiv">
+      <button id="newButton">New</button><br/><br/>
+      <input type="text" id="searchText" name="searchText"/>
+      <button id="searchButton" onclick="getAppointments()">Search</button>
+    </div>
+  </div>
+  <div id="showAddForm">
+    
+    <br>
+    <form id="addForm" action="" method=POST>
+      <button id="addButton" type="submit">Add</button>
+    <button id="cancelButton" type="reset">Cancel</button>
+      <div>
+        <label for="date">Date:</label>
+        <input type="date" id="dateHtml" name="dateHtml" required>
+      </div>
+      <div>
+        <label for="time">Time:</label>
+        <input type="time" id="timeHtml" name="timeHtml" required>
+      </div>
+      <div>
+        <label for="desc">Desc:</label>
+        <input type="text" id="descHtml" name="descHtml" required>
+      </div>
+    </form>
+
+  </div>
+  <br><br>
+  <div>
+    <table style="width:50%; text-align: center;" id="appointmentsTable">
+      <tr>
+        <th>DATE</th>
+        <th>TIME</th>
+        <th>DESCRIPTION</th>  
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
