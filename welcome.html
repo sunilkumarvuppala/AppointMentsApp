@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width">
   <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
   <script src="data.js"></script>
-  <title>JS Bin</title>
+  <title>Appointments</title>
 </head>
 <body>
   <div>
@@ -21,20 +21,20 @@
   <div id="showAddForm">
     
     <br>
-    <form id="addForm" action="" method=POST>
+    <form id="addForm" action=""  method=POST>
       <button id="addButton" type="submit">Add</button>
-    <button id="cancelButton" type="reset">Cancel</button>
+    <button id="cancelButton" type="reset" onClick="clearAllFields()" >Cancel</button>
       <div>
         <label for="date">Date:</label>
-        <input type="date" id="dateHtml" name="dateHtml" required>
+        <input type="date" id="dateHtml" name="dateHtml" >
       </div>
       <div>
         <label for="time">Time:</label>
-        <input type="time" id="timeHtml" name="timeHtml" required>
+        <input type="time" id="timeHtml" name="timeHtml" >
       </div>
       <div>
         <label for="desc">Desc:</label>
-        <input type="text" id="descHtml" name="descHtml" required>
+        <input type="text" id="descHtml" name="descHtml" >
       </div>
     </form>
 

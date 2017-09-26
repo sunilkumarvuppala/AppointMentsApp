@@ -2,13 +2,11 @@
 
 use CGI;
 use DBI;
-#use DBD::mysql;
 
 $query = new CGI;
 print $query ->header;
 
 my $searchValue = $query->param("searchValue");
-#my $searchValue = ;
 
 $database = "perlmysqldb";
 $host = "localhost";
